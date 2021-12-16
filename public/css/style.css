@@ -1,0 +1,648 @@
+/*General*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhaijaan 2';
+}
+header {
+    display: flex;
+    width: 100%;
+    background-color: #e6e6e6;
+    border-bottom: 5px #4e14bc22 solid;
+}
+#aLogo {
+    width: 20%;
+}
+#logo {
+    width: 100%;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: 30px auto;
+}
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+#nav a {
+    font-family: 'Dangrek';
+    padding: 10px;
+    color: #4e14bc;
+    font-size: 1.5rem;
+    border-bottom: 5px #e6e6e6 solid;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: border-bottom 300ms;
+}
+#nav a:hover {
+    border-bottom: 5px #4e14bc solid;
+}
+#filter {
+    border: none;
+    border-radius: 20px;
+}
+#settingsConnexionSign {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 50%;
+}
+#settingsConnexionSign a {
+    font-family: 'Dangrek';
+    padding: 10px;
+    color: #4e14bc;
+    font-size: 1.5rem;
+    border-bottom: 5px #e6e6e6 solid;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: border-bottom 300ms;
+}
+#settingsConnexionSign a:hover {
+    border-bottom: 5px #4e14bc solid;
+}
+#txtSearch {
+    border: none;
+    padding: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#btnSearch {
+    padding: 5px;
+    border: none;
+    background-color: #f8f5f5;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: background-color 300ms, color 300ms;
+}
+#btnSearch:hover {
+    background-color: #4e14bc;
+    color: white;
+}
+/*Page principale*/
+#presentation {
+    width: 100%;
+    height: 900px;
+}
+#banner {
+    padding-top: 0.1px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+#overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff55;
+}
+#banner h1 {
+    font-family: 'Dangrek';
+    padding: 30px;
+    left: calc(50% - 16%);
+    position: absolute;
+    color: white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    width: 30%;
+    text-align: center;
+    top: 500px;
+    background-color: #111111ee;
+}
+#echantAffiches {
+    width: 100%;
+    padding-bottom: 150px;
+}
+#echantAffiches h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+#echantAffiches > div {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+#echantAffiches > div > div {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+#echantAffiches > div > div a {
+    width: 200px;
+    margin: 0 auto;
+}
+#echantAffiches img {
+    width: 200px;
+    height: 310px;
+    margin: 0 auto;
+    transition: width 300ms, height 300ms;
+}
+#echantAffiches img:hover {
+    width: 210px;
+    height: 320px;
+}
+#echantAffiches h2 {
+    margin: 0 auto;
+    width: 70%;
+    font-size: 1.5 rem;
+    text-align: center;
+}
+#echantAffiches p {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+}
+/*user.php*/
+#user > div > h1 {
+    color: #4e14bc;
+}
+#user > div {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+#user > div:first-child {
+    width: 20%;
+    justify-content: none;
+}
+#user > div > div {
+    display: flex;
+    flex-direction: column;
+}
+#user > div > div:first-child {
+    width: 30%;
+}
+#user > div > div:first-child h2 {
+    text-align: center;
+}
+#user > div > div:first-child > div {
+    display: flex;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #e6e6e6;
+    justify-content: space-around;
+    flex-direction: column;
+}
+#user > div > div:first-child > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 30px;
+}
+#user > div > div:last-child {
+    width: 50%;
+}
+#user > div > div:last-child h1 {
+    text-align: center;
+    color: #4e14bc;
+}
+#user > div > div h2 {
+    color: #4e14bc;
+}
+#user img {
+    background-color: #e6e6e6;
+    padding: 5px;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+#allPosts {
+    width: 100%;
+    background-color: #e6e6e6;
+    border-radius: 30px;
+}
+.post {
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+    width: 90%;
+    margin: 20px auto;
+}
+#allSeries {
+    width: 100%;
+    background-color: #e6e6e6;
+    border-radius: 30px;
+}
+.serie {
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+    width: 90%;
+    margin: 20px auto;
+    word-break: break-all;
+}
+/*series*/
+#listMovies {
+    width: 100%;
+}
+#listMovies h1 {
+    text-align: center;
+}
+#allMovies {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+.movies {
+    margin: 10px;
+}
+.movies img {
+    width: 200px;
+    height: 310px;
+    margin: 0 auto;
+    transition: width 300ms, height 300ms;
+}
+.movies img:hover {
+    width: 210px;
+    height: 320px;
+}
+.movies a {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    color: #4e14bc;
+    text-decoration: none;
+    word-break: break-all;
+}
+/*ConnexionRegister*/
+#box {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 10px auto;
+}
+#btnConnexion {
+    display: block;
+    padding: 5px;
+    width: 15%;
+    margin: 50px auto;
+    background-color: #f8f5f5;
+    border: none;
+    color: black;
+    border-radius: 20px;
+    transition: background-color 300ms, color 300ms;
+}
+#btnConnexion:hover {
+    background-color: #4e14bc;
+    color: white;
+}
+#btnRegister {
+    padding: 5px;
+    width: 15%;
+    margin: 10px auto;
+    background-color: #f8f5f5;
+    border: none;
+    color: black;
+    border-radius: 20px;
+    transition: background-color 300ms, color 300ms;
+}
+#btnRegister:hover {
+    background-color: #4e14bc;
+    color: white;
+}
+#formConnexion {
+    background-color: #e6e6e6;
+    padding: 10px;
+    margin: 10px auto;
+    width: 90%;
+    border-radius: 30px;
+}
+#formRegister {
+    background-color: #e6e6e6;
+    padding: 10px;
+    margin: 10px auto;
+    width: 90%;
+    border-radius: 30px;
+}
+#email {
+    padding: 5px;
+    width: 15%;
+    margin: 0 auto;
+    background-color: #f8f5f5;
+    border: none;
+    color: black;
+    border-radius: 20px;
+}
+#password {
+    padding: 5px;
+    width: 15%;
+    margin: 0 auto;
+    background-color: #f8f5f5;
+    border: none;
+    color: black;
+    border-radius: 20px;
+}
+#login {
+    padding: 5px;
+    width: 15%;
+    margin: 0 auto;
+    background-color: #f8f5f5;
+    border: none;
+    color: black;
+    border-radius: 20px;
+    transition: background-color 300ms, color 300ms;
+}
+#login:hover {
+    background-color: #4e14bc;
+    color: white;
+}
+#box label {
+    font-size: 1.25rem;
+}
+#box span {
+    font-size: 1.25rem;
+}
+/*Détails d'une série*/
+#details {  
+    
+    margin: 10px auto;
+}
+#desc {
+    width: 40%;
+    background-color: #e6e6e6;
+    border-radius: 30px;
+    margin: 10px auto;
+    padding: 10px;
+}
+#desc p {
+    font-size: 1.25rem;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+#desc a {
+    display: block;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    width: 50%;
+    margin: 20px auto;
+    background-color: #f8f5f5;
+    transition: background-color 300ms, color 300ms;
+}
+#desc a:hover {
+    background-color: #4e14bc;
+    color: white;
+}
+#desc form {
+    display: flex;
+    flex-direction: column;
+}
+#desc button {
+    background-color: #f8f5f5;
+    border: none;
+    border-radius: 20px;
+    display: block;
+    width: 20%;
+    color: black;
+    margin: 20px auto;
+    transition: background-color 300ms, color 300ms;
+}
+#desc button:hover {
+    background-color: #4e14bc;
+    color: white;
+}
+#desc textarea {
+    text-align: center;
+    border: none;
+    padding: 5px;
+    background-color: #f8f5f5;
+    border-radius: 20px;
+    max-width: 50%;
+    min-width: 50%;
+    width: 50%;
+    margin: 0 auto;
+}
+#stat {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #e6e6e6;
+    border-radius: 30px;
+    padding: 10px;
+}
+#stat h3 {
+    text-align: center;
+    color: #4e14bc;
+    font-size: 1.25rem;
+}
+#stat p {
+    font-size: 1.25rem;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+#episodes {
+    width: 40%;
+    margin: 0 auto;
+    background-color: #e6e6e6;
+    border-radius: 30px;
+    padding: 10px;
+}
+#episodes h3 {
+    text-align: center;
+    color: #4e14bc;
+    font-size: 1.25rem;
+}
+#episodes img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+#episodes p {
+    font-size: 1.25rem;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+#admin {
+    width: 50%;
+    background-color: #e6e6e6;
+    border-radius: 30px;
+    padding: 10px;
+}
+#admin h3 {
+    text-align: center;
+    color: #4e14bc;
+    font-size: 1.25rem;
+}
+#admin p {
+    font-size: 1.25rem;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+#admin p a {
+    color: #4e14bc;
+    text-decoration: none;
+    font-weight: bold;
+}
+#admin > a {
+    display: block;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    width: 50%;
+    margin: 20px auto;
+    background-color: #f8f5f5;
+    transition: background-color 300ms, color 300ms;
+}
+#admin > a:hover {
+    background-color: #4e14bc;
+    color: white;
+}
+#admin span { 
+    display: block;
+    width: 50%;
+    font-size: 1.25rem;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+}
+#addCommentaire {
+    width: 40%;
+    margin: 20px auto;
+    background-color: #e6e6e6;
+    border-radius: 30px;
+    padding: 10px;
+}
+#addCommentaire h3 {
+    text-align: center;
+    color: #4e14bc;
+    font-size: 1.25rem;
+}
+#addCommentaire label {
+    display: block;
+    width: 50%;
+    font-size: 1.25rem;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+}
+#addCommentaire input {
+    display: block;
+    padding: 5px;
+    width: 15%;
+    margin: 10px auto;
+    background-color: #f8f5f5;
+    border: none;
+    color: black;
+    border-radius: 20px;
+}
+#addCommentaire textarea {
+    display: block;
+    padding: 5px;
+    width: 50%;
+    max-width: 50%;
+    min-width: 50%;
+    margin: 10px auto;
+    background-color: #f8f5f5;
+    border: none;
+    color: black;
+    border-radius: 20px;
+}
+#addCommentaire button {
+    display: block;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border: none;
+    width: 20%;
+    margin: 20px auto;
+    background-color: #f8f5f5;
+    transition: background-color 300ms, color 300ms;
+}
+#addCommentaire button:hover {
+    background-color: #4e14bc;
+    color: white;
+}
+#commentaires {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #e6e6e6;
+    border-radius: 30px;
+    padding: 10px;
+}
+#commentaires h3 {
+    text-align: center;
+    color: #4e14bc;
+    font-size: 1.25rem;
+}
+#commentaires p {
+    font-size: 1.25rem;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+#commentaires p a {
+    color: #4e14bc;
+    text-decoration: none;
+    font-weight: bold;
+}
+#commentaires > a {
+    display: block;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    width: 50%;
+    margin: 20px auto;
+    background-color: #f8f5f5;
+    transition: background-color 300ms, color 300ms;
+}
+#commentaires > a:hover {
+    background-color: #4e14bc;
+    color: white;
+}
+#commentaires span {
+    display: block;
+    width: 50%;
+    font-size: 1.25rem;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+}
+/*error*/
+#error {
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    bottom: 0;
+}
